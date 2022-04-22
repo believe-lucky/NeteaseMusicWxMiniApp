@@ -1,0 +1,43 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "page/component/home/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "page/component/login/index",
+          "query": "",
+          "scene": null,
+          "partialCompile": {
+            "enabled": false,
+            "pages": [
+              "page/component/home/index",
+              "page/component/playlist/index",
+              "page/component/mv/index"
+            ]
+          }
+        },
+        {
+          "name": "",
+          "pathName": "page/component/me/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

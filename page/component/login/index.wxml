@@ -1,0 +1,24 @@
+<view class="form-common">
+  <form bindsubmit="login">
+    <view class="formc-cnt">
+      <text>账号：</text>
+      <input auto-focus bindinput="textinput" data-type="1" placeholder="手机/邮箱" type="text" />
+    </view>
+    <view class="formc-cnt">
+      <text>密码：</text>
+      <input auto-focus bindinput="textinput" data-type="2" type="text" password="true" />
+    </view>
+    <view>
+      <button type="primary" hover-class="btnhover" formType="submit">登录</button>
+    </view>
+    <view>----------------------------------------------------</view>
+    <view class="cont" wx:if="myQrcode">
+      <button type="primary"></button>
+      <button type="primary" hover-class="btnhover">第三方插件生成</button>
+      <canvas style="width: 220px; height: 220px;" canvas-id="myQrcode"></canvas>
+      <view class="text">扫一扫</view>
+      <button type="primary">后端返的base64</button>
+      <image style="width: 220px; height: 220px;" src="{{qrImg}}" alt=""/>
+    </view> 
+  </form>
+</view>
